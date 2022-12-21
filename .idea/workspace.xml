@@ -4,23 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Project to understand Microservices - Service communication and service discovery">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/CatalogItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/model/MovieRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2JDesUEaFlBRNJaJihKF5Qgw643" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,13 +47,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
     "last_opened_file_path": "C:/Studies/MovieCatalogMicroserviceProject"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.study.movieinfoservice.controller" />
+      <recent name="com.study.moviecatalogservice.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.moviecatalogservice.model" />
+    </key>
+  </component>
   <component name="RunManager" selected="Spring Boot.MovieCatalogServiceApplication">
     <configuration name="MovieCatalogServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="movie-catalog-service" />
@@ -69,8 +100,16 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="218000" />
+      <workItem from="1671617768806" duration="5452000" />
     </task>
+    <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
+      <created>1671618150840</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671618150840</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,5 +125,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project to understand Microservices - Service communication and service discovery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project to understand Microservices - Service communication and service discovery" />
   </component>
 </project>
