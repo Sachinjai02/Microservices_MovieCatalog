@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Project to understand Microservices - Service communication and service discovery">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/CatalogItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/model/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/model/MovieRating.java" afterDir="false" />
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="adding .gitignore">
+      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRatingResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/repository/MovieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/dto/MovieRatingResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="5452000" />
+      <workItem from="1671617768806" duration="8887000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -109,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671618150840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Adding dummy implementations for the 3 microservices and making a service call from one to other">
+      <created>1671626498329</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671626498329</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding .gitignore">
+      <created>1671626522574</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671626522574</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +140,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project to understand Microservices - Service communication and service discovery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project to understand Microservices - Service communication and service discovery" />
+    <MESSAGE value="Adding dummy implementations for the 3 microservices and making a service call from one to other" />
+    <MESSAGE value="adding .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding .gitignore" />
   </component>
 </project>
