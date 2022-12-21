@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/movie-catalog-service/pom.xml" />
         <option value="$PROJECT_DIR$/movie-info-service/pom.xml" />
         <option value="$PROJECT_DIR$/ratings-data-service/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-discovery-server/pom.xml" />
       </list>
     </option>
   </component>

@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="adding .gitignore">
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRatingResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/repository/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/dto/MovieRatingResponseDto.java" afterDir="false" />
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRating.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ratings-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +32,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -67,6 +73,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MovieCatalogServiceApplication">
+    <configuration name="EurekaDiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="eureka-discovery-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.eurekadiscoveryserver.EurekaDiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MovieCatalogServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="movie-catalog-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.moviecatalogservice.MovieCatalogServiceApplication" />
@@ -88,6 +101,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.EurekaDiscoveryServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="8887000" />
+      <workItem from="1671617768806" duration="13598000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -121,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671626522574</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information">
+      <created>1671630561120</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671630561121</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +167,7 @@
     <MESSAGE value="Project to understand Microservices - Service communication and service discovery" />
     <MESSAGE value="Adding dummy implementations for the 3 microservices and making a service call from one to other" />
     <MESSAGE value="adding .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding .gitignore" />
+    <MESSAGE value="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information" />
   </component>
 </project>
