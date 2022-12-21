@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices.">
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="14263000" />
+      <workItem from="1671617768806" duration="15187000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -147,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671638552751</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them.">
+      <created>1671639179270</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671639179270</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +176,7 @@
     <MESSAGE value="adding .gitignore" />
     <MESSAGE value="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information" />
     <MESSAGE value="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices." />
+    <MESSAGE value="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them." />
   </component>
 </project>

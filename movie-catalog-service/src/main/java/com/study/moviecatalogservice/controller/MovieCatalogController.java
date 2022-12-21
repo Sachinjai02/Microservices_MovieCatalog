@@ -2,10 +2,8 @@ package com.study.moviecatalogservice.controller;
 
 import com.study.moviecatalogservice.model.CatalogItem;
 import com.study.moviecatalogservice.model.Movie;
-import com.study.moviecatalogservice.model.MovieRating;
 import com.study.moviecatalogservice.model.MovieRatingResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
 
-import java.lang.reflect.Type;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
