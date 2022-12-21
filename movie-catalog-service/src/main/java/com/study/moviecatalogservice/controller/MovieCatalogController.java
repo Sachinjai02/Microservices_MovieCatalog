@@ -33,11 +33,11 @@ public class MovieCatalogController {
     public List<CatalogItem> getCatalog(@PathVariable("id") String userId) {
 
         //get all movies for this user along with its rating
-        MovieRatingResponseDto responseDto = restTemplate.getForObject("http://localhost:8080/ratings/users/" + userId, MovieRatingResponseDto.class);
+        MovieRatingResponseDto responseDto = restTemplate.getForObject("http://RATINGS-DATA-SERVICE/ratings/users/" + userId, MovieRatingResponseDto.class);
 
         //for each movie, get movie details from movie-info-service
         return responseDto.getMovieRatingList().stream().map(rating -> {
-            Movie movieDesc = restTemplate.getForObject("http://localhost:8081/movie/" + rating.getMovieId(), Movie.class);
+            Movie movieDesc = restTemplate.getForObject("http://movie-info-service/movie/" + rating.getMovieId(), Movie.class);
 
             /*Movie movieDesc = webClientBuilder.build()
                     .get()

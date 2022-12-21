@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="13598000" />
+      <workItem from="1671617768806" duration="14263000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -146,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671630561121</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices.">
+      <created>1671638552751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671638552751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +169,7 @@
     <MESSAGE value="Adding dummy implementations for the 3 microservices and making a service call from one to other" />
     <MESSAGE value="adding .gitignore" />
     <MESSAGE value="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating the movie catalog service to call other two microservices (movie rating service and movie info service) and return the consolidated information" />
+    <MESSAGE value="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices." />
   </component>
 </project>
