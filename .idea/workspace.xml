@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them.">
+      <change afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/model/TheMovieDBMovie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/MovieInfoServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/MovieInfoServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/java/com/study/movieinfoservice/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/main/java/com/study/ratingsdataservice/controller/RatingsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +60,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Studies/MovieCatalogMicroserviceProject"
+    "last_opened_file_path": "C:/Studies/MovieCatalogMicroserviceProject",
+    "spring.configuration.checksum": "a563f14f3a72bb2819c2fe3cce086084"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -65,7 +73,7 @@
       <recent name="com.study.moviecatalogservice.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MovieCatalogServiceApplication">
+  <component name="RunManager" selected="Spring Boot.RatingsDataServiceApplication">
     <configuration name="EurekaDiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="eureka-discovery-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.study.eurekadiscoveryserver.EurekaDiscoveryServerApplication" />
@@ -109,7 +117,8 @@
       <option name="presentableId" value="Default" />
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
-      <workItem from="1671617768806" duration="15187000" />
+      <workItem from="1671617768806" duration="16019000" />
+      <workItem from="1671697417938" duration="2717000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -153,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671639179270</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them.">
+      <created>1671640101693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671640101693</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
