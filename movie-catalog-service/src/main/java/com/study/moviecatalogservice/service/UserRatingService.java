@@ -15,6 +15,11 @@ public class UserRatingService {
     private RestTemplate restTemplate;
 
     @HystrixCommand(fallbackMethod = "getFallbackUserRating",
+            threadPoolKey = "userRatingPool",
+            threadPoolProperties = {
+                    @HystrixProperty(name="coreSize", value="50"),
+                    @HystrixProperty(name="maxQueueSize", value="100"),
+            },
             commandProperties = {
                     @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000"),
                     @HystrixProperty(name = "circuitBreaker.requestVolumeThreshold", value = "5"),

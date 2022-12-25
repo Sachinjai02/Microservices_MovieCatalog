@@ -12,12 +12,17 @@ public class MovieInfoService {
     @Autowired
     private RestTemplate restTemplate;
     @HystrixCommand(fallbackMethod = "getFallbackMovieDesc",
-    commandProperties = {
+            threadPoolKey = "movieInfoPool",
+            threadPoolProperties = {
+                    @HystrixProperty(name="coreSize", value="20"),
+                    @HystrixProperty(name="maxQueueSize", value="100"),
+            },
+            commandProperties = {
             @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds", value = "2000"),
             @HystrixProperty(name="circuitBreaker.requestVolumeThreshold", value = "5"),
             @HystrixProperty(name="circuitBreaker.errorThresholdPercentage", value = "50"),
             @HystrixProperty(name="circuitBreaker.sleepWindowInMilliseconds", value = "5000")
-    })
+            })
     public Movie getMovieDesc(String movieId) {
         return restTemplate.getForObject("http://MOVIE-INFO-SERVICE/movie/" + movieId, Movie.class);
     }
