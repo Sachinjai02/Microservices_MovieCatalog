@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="Updating code to fetch movie details by hitting Rest APi exposed on themoviedb.com">
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/service/MovieInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/service/UserRatingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4877c174-c280-4950-9536-c7f295f78f63" name="Changes" comment="1. Spring cloud version of Hystrix does not seem to work with spring boot 3. Hence updating all projects to J8, Spring boot 2.1.2&#10;2. Refactoring movie catalog service to call other 2 (movie info and rating service) and apply Circuit breaker pattern on each of those calls to return fallback response based on params.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-discovery-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-discovery-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-discovery-server/src/test/java/com/study/eurekadiscoveryserver/EurekaDiscoveryServerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-discovery-server/src/test/java/com/study/eurekadiscoveryserver/EurekaDiscoveryServerApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-catalog-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/MovieCatalogServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/controller/MovieCatalogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRatingResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/java/com/study/moviecatalogservice/model/MovieRatingResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/test/java/com/study/moviecatalogservice/MovieCatalogServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/test/java/com/study/moviecatalogservice/MovieCatalogServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-info-service/src/test/java/com/study/movieinfoservice/MovieInfoServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-info-service/src/test/java/com/study/movieinfoservice/MovieInfoServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ratings-data-service/src/test/java/com/study/ratingsdataservice/RatingsDataServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ratings-data-service/src/test/java/com/study/ratingsdataservice/RatingsDataServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/movie-catalog-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +120,7 @@
       <updated>1671617335843</updated>
       <workItem from="1671617340639" duration="228000" />
       <workItem from="1671617768806" duration="16019000" />
-      <workItem from="1671697417938" duration="22901000" />
+      <workItem from="1671697417938" duration="25683000" />
     </task>
     <task id="LOCAL-00001" summary="Project to understand Microservices - Service communication and service discovery">
       <created>1671618150840</created>
@@ -190,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671703818143</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="1. Spring cloud version of Hystrix does not seem to work with spring boot 3. Hence updating all projects to J8, Spring boot 2.1.2&#10;2. Refactoring movie catalog service to call other 2 (movie info and rating service) and apply Circuit breaker pattern on each of those calls to return fallback response based on params.">
+      <created>1671909965359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671909965359</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +210,8 @@
     <MESSAGE value="Adding spring cloud Eureka discovery server as well as adding eureka clients inside each of the microservices." />
     <MESSAGE value="Updating MovieCatalog service to pass in other services name and force RestTemplate to lookup those services through Eureka service and also load balance them." />
     <MESSAGE value="Updating code to fetch movie details by hitting Rest APi exposed on themoviedb.com" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating code to fetch movie details by hitting Rest APi exposed on themoviedb.com" />
+    <MESSAGE value="Spring cloud version of Hystrix does not seem to work with spring boot 3. Hence updating all projects to J8, Spring boot 2.1.2" />
+    <MESSAGE value="1. Spring cloud version of Hystrix does not seem to work with spring boot 3. Hence updating all projects to J8, Spring boot 2.1.2&#10;2. Refactoring movie catalog service to call other 2 (movie info and rating service) and apply Circuit breaker pattern on each of those calls to return fallback response based on params." />
+    <option name="LAST_COMMIT_MESSAGE" value="1. Spring cloud version of Hystrix does not seem to work with spring boot 3. Hence updating all projects to J8, Spring boot 2.1.2&#10;2. Refactoring movie catalog service to call other 2 (movie info and rating service) and apply Circuit breaker pattern on each of those calls to return fallback response based on params." />
   </component>
 </project>
